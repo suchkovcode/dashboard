@@ -9,7 +9,7 @@ module.exports = {
       isDev ? undefined : require("postcss-sort-media-queries"),
       isDev ? undefined : require("postcss-focus"),
       purgecss({
-         content: ["./src/pages/*.html", "./src/modules/*.js"],
+         content: ["./src/layouts/*.html", "./src/modules/*.js"],
          css: [],
          skippedContentGlobs: ["node_modules/**"],
          dynamicAttributes: [""],
