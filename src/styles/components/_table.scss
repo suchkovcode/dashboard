@@ -1,0 +1,76 @@
+.table {
+   overflow-x: scroll;
+   display: block;
+   width: 100%;
+   padding-bottom: 30px;
+   scrollbar-width: 0;
+
+   &__header {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 35px;
+      color: var(--color_table_header);
+
+      & .table__data {
+         padding-bottom: 16px;
+         border-bottom: 1px solid var(--color_border);
+      }
+   }
+
+   &__row {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(6, minmax(180px, 350px));
+      font: 500 14px/1.2 "Poppins";
+
+      &--item {
+         padding: 15px 0;
+         border-bottom: 1px solid var(--color_border);
+         font: 500 14px/1.2 "Poppins";
+         color: var(--color_fonts);
+      }
+   }
+
+   &__data {
+      padding-right: 15px;
+   }
+
+   &__data[data-status="active"] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      padding: 5px 10px;
+      border: 1px solid var(--color_active_primary);
+      border-radius: 4px;
+      background-color: var(--color_active_secondary);
+      color: var(--color_active_primary);
+   }
+
+   &__data[data-status="Inactive"] {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      padding: 5px 10px;
+      border: 1px solid var(--color_inactive_primary);
+      border-radius: 4px;
+      background-color: var(--color_inactive_secondary);
+      color: var(--color_inactive_primary);
+   }
+
+
+   &::-webkit-scrollbar {
+      height: 8px;
+   }
+
+   &::-webkit-scrollbar-track {
+      background: var(--color_input);
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+      background-color: var(--color_icon);
+   }
+}

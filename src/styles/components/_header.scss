@@ -1,0 +1,113 @@
+/* stylelint-disable at-rule-no-unknown */
+.header {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: var(--color_base);
+
+   &__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &-icon {
+         display: block;
+         width: 37px;
+         height: 37px;
+         min-width: 37px;
+         min-height: 37px;
+      }
+
+      &-text {
+         font: 600 28px/1.2 "Poppins";
+         text-decoration: none;
+         color: var(--color_fonts);
+      }
+
+      &-version {
+         align-self: flex-end;
+         margin-bottom: 5px;
+         margin-left: -5px;
+         font: 400 14px/1.2 "Poppins";
+         color: var(--color_font_opacity);
+      }
+   }
+
+   &__menu {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+
+      &-line {
+         position: relative;
+         display: block;
+         width: 30px;
+         height: 2px;
+         border-radius: 10px;
+         background-color: var(--color_fonts);
+         transition: all 0.2s ease-in-out;
+
+         &::before,
+         &::after {
+            content: "";
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 2px;
+            border-radius: 10px;
+            background-color: var(--color_fonts);
+            transition: all 0.2s ease-in-out;
+         }
+
+         &::before {
+            top: -10px;
+         }
+
+         &::after {
+            bottom: -8px;
+         }
+      }
+
+      &:hover {
+         .header__menu-line {
+            background-color: var(--color_primary);
+         }
+
+         .header__menu-line::before,
+         .header__menu-line::after {
+            background-color: var(--color_primary);
+         }
+      }
+
+      &.active {
+         .header__menu-line {
+            background-color: transparent;
+         }
+
+         .header__menu-line::before {
+            top: 2px;
+            transform: rotate(45deg);
+         }
+
+         .header__menu-line::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+         }
+
+         .header__menu-line::before,
+         .header__menu-line::after {
+            background-color: var(--color_primary);
+         }
+      }
+   }
+
+   @include lg {
+      display: none;
+   }
+}
