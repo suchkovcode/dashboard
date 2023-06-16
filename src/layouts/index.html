@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Webpack</title>
+      <title>Dashboard</title>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    </head>
-   <body>
+   <body data-theme="white">
+      <header class="header">
+         <a class="header__logo" href="">
+            <svg class="header__logo-icon">
+               <use xlink:href="/src/assets/img/svg/sprite.svg#logo"></use>
+            </svg>
+            <span class="header__logo-text">Dashboard</span>
+            <span class="header__logo-version">v.01</span>
+         </a>
+         <div class="header__menu">
+            <span class="header__menu-line"></span>
+         </div>
+      </header>
+      <main class="main">
+         <aside class="aside">
+            <div class="aside__top">
+               <a class="aside__logo" href="">
+                  <svg class="aside__logo-icon">
+                     <use xlink:href="/src/assets/img/svg/sprite.svg#logo"></use>
+                  </svg>
+                  <span class="aside__logo-text">Dashboard</span>
+                  <span class="aside__logo-version">v.01</span>
+               </a>
+               <nav class="aside__nav">
+                  <ul class="aside__nav-list">
+                     <li class="aside__nav-item active">
+                        <svg class="aside__nav-icon">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-dasboard"></use>
+                        </svg>
+                        <span class="aside__nav-btn">Dashboard</span>
+                        <svg class="aside__nav-icon aside__nav-icon--arrow">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-arrow"></use>
+                        </svg>
+                     </li>
+                     <li class="aside__nav-item">
+                        <svg class="aside__nav-icon">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-product"></use>
+                        </svg>
+                        <span class="aside__nav-btn">Product</span>
+                        <svg class="aside__nav-icon aside__nav-icon--arrow">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-arrow"></use>
+                        </svg>
+                     </li>
+                     <li class="aside__nav-item">
+                        <svg class="aside__nav-icon">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-customers"></use>
+                        </svg>
+                        <span class="aside__nav-btn">Customers</span>
+                        <svg class="aside__nav-icon aside__nav-icon--arrow">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-arrow"></use>
+                        </svg>
+                     </li>
+                     <li class="aside__nav-item">
+                        <svg class="aside__nav-icon">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-income"></use>
+                        </svg>
+                        <span class="aside__nav-btn">Income</span>
+                        <svg class="aside__nav-icon aside__nav-icon--arrow">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-arrow"></use>
+                        </svg>
+                     </li>
+                     <li class="aside__nav-item">
+                        <svg class="aside__nav-icon">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-promote"></use>
+                        </svg>
+                        <span class="aside__nav-btn">Promote</span>
+                        <svg class="aside__nav-icon aside__nav-icon--arrow">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-arrow"></use>
+                        </svg>
+                     </li>
+                     <li class="aside__nav-item">
+                        <svg class="aside__nav-icon">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-help"></use>
+                        </svg>
+                        <span class="aside__nav-btn">Help</span>
+                        <svg class="aside__nav-icon aside__nav-icon--arrow">
+                           <use xlink:href="/src/assets/img/svg/sprite.svg#aside-icon-arrow"></use>
+                        </svg>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="aside__user">
+               <img class="aside__user-img" src="/src/assets/img/png/user.png" alt="Фото пользователя" width="45" height="45" />
+               <div class="aside__user-info">
+                  <p class="aside__user-name">Evano</p>
+                  <p class="aside__user-job">Project Manager</p>
+               </div>
+            </div>
+         </aside>
+         <article class="article">
+            <h1 class="article__title">Hello <span data-id="userName">Evano</span> 👋🏼</h1>
+            <div class="content article__content">
+               <header class="content__header">
+                  <div class="content__text">
+                     <h2 class="content__title">All Customers</h2>
+                     <p class="content__badge">Active Members</p>
+                  </div>
+
+                  <div class="content__search">
+                     <svg class="content__search-icon">
+                        <use xlink:href="/src/assets/img/svg/sprite.svg#content-icon-search"></use>
+                     </svg>
+                     <input class="content__search-btn" type="search" name="" placeholder="Search" />
+                  </div>
+               </header>
+               <table class="table content__body">
+                  <thead class="table__header">
+                     <tr class="table__row">
+                        <td class="table__data">Customer Name</td>
+                        <td class="table__data">Company</td>
+                        <td class="table__data">Phone Number</td>
+                        <td class="table__data">Email</td>
+                        <td class="table__data">Country</td>
+                        <td class="table__data">Status</td>
+                     </tr>
+                  </thead>
+                  <tbody class="table__body">
+                     <tr class="table__row table__row--item" data-index="0">
+                        <td class="table__data" data-index="0" data-type="">Jane Cooper</td>
+                        <td class="table__data" data-index="1" data-type="">Microsoft</td>
+                        <td class="table__data" data-index="2" data-type="">(225) 555-0118</td>
+                        <td class="table__data" data-index="3" data-type="">jane@microsoft.com</td>
+                        <td class="table__data" data-index="4" data-type="">United States</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="active">Active</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="1">
+                        <td class="table__data" data-index="0" data-type="">Floyd Miles</td>
+                        <td class="table__data" data-index="1" data-type="">Yahoo</td>
+                        <td class="table__data" data-index="2" data-type="">(205) 555-0100</td>
+                        <td class="table__data" data-index="3" data-type="">floyd@yahoo.com</td>
+                        <td class="table__data" data-index="4" data-type="">Kiribati</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="Inactive">Inactive</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="2">
+                        <td class="table__data" data-index="0" data-type="">Ronald Richards</td>
+                        <td class="table__data" data-index="1" data-type="">Adobe</td>
+                        <td class="table__data" data-index="2" data-type="">(302) 555-0107</td>
+                        <td class="table__data" data-index="3" data-type="">ronald@adobe.com</td>
+                        <td class="table__data" data-index="4" data-type="">Israel</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="Inactive">Inactive</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="3">
+                        <td class="table__data" data-index="0" data-type="">Marvin McKinney</td>
+                        <td class="table__data" data-index="1" data-type="">Tesla</td>
+                        <td class="table__data" data-index="2" data-type="">(252) 555-0126</td>
+                        <td class="table__data" data-index="3" data-type="">marvin@tesla.com</td>
+                        <td class="table__data" data-index="4" data-type="">Iran</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="active">Active</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="4">
+                        <td class="table__data" data-index="0" data-type="">Jerome Bell</td>
+                        <td class="table__data" data-index="1" data-type="">Google</td>
+                        <td class="table__data" data-index="2" data-type="">(629) 555-0129</td>
+                        <td class="table__data" data-index="3" data-type="">jerome@google.com</td>
+                        <td class="table__data" data-index="4" data-type="">Réunion</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="active">Active</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="5">
+                        <td class="table__data" data-index="0" data-type="">Kathryn Murphy</td>
+                        <td class="table__data" data-index="1" data-type="">Microsoft</td>
+                        <td class="table__data" data-index="2" data-type="">(406) 555-0120</td>
+                        <td class="table__data" data-index="3" data-type="">kathryn@microsoft.com</td>
+                        <td class="table__data" data-index="4" data-type="">Curaçao</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="active">Active</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="6">
+                        <td class="table__data" data-index="0" data-type="">Jacob Jones</td>
+                        <td class="table__data" data-index="1" data-type="">Yahoo</td>
+                        <td class="table__data" data-index="2" data-type="">(208) 555-0112</td>
+                        <td class="table__data" data-index="3" data-type="">jacob@yahoo.com</td>
+                        <td class="table__data" data-index="4" data-type="">Brazil</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="active">Active</td>
+                     </tr>
+                     <tr class="table__row table__row--item" data-index="2">
+                        <td class="table__data" data-index="0" data-type="">Kristin Watson</td>
+                        <td class="table__data" data-index="1" data-type="">Facebook</td>
+                        <td class="table__data" data-index="2" data-type="">(704) 555-0127</td>
+                        <td class="table__data" data-index="3" data-type="">kristin@facebook.com</td>
+                        <td class="table__data" data-index="4" data-type="">Åland Islands</td>
+                        <td class="table__data" data-index="5" data-type="" data-status="Inactive">Inactive</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <footer class="content__footer">
+                  <p class="content__footer-info">Showing data 1 to 8 of 256K entries</p>
+                  <ul class="pagination content__footer-pagination">
+                     <li class="pagination__item" data-index="0"><</li>
+                     <li class="pagination__item active" data-index="1">1</li>
+                     <li class="pagination__item" data-index="2">2</li>
+                     <li class="pagination__item" data-index="3">3</li>
+                     <li class="pagination__item" data-index="4">4</li>
+                     <li class="pagination__item" data-index="5" data-type="more">...</li>
+                     <li class="pagination__item" data-index="6">40</li>
+                     <li class="pagination__item" data-index="7">></li>
+                  </ul>
+               </footer>
+            </div>
+         </article>
+      </main>
    </body>
 </html>
