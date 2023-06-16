@@ -8,8 +8,13 @@ body[data-theme="white"] {
    --color_menu_item: #9197B3;
    --color_font_opacity: #B5B7C0;
    --color_icon: #9197B3;
+   --color_input: #F9FBFF;
+   --color_border: #EEEE;
+   --color_pagination: #F5F5F5;
+   --color_palceholder: #B5B7C0;
+   --color_table_header: #B5B7C0;
    --color_active_primary: #008767;
-   --color_active_secondary: #16C098;
+   --color_active_secondary: rgba(22, 192, 152, 35%);
    --color_inactive_primary: #DF0404;
    --color_inactive_secondary: #FFC5C5;
 }
