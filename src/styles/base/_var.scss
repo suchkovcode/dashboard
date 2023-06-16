@@ -1,0 +1,15 @@
+/* stylelint-disable selector-no-qualifying-type */
+body[data-theme="white"] {
+   --color_base: #fff;
+   --color_bg: #FAFBFF;
+   --color_primary: #5932EA;
+   --color_secondary: #5427f5;
+   --color_fonts: #000;
+   --color_menu_item: #9197B3;
+   --color_font_opacity: #B5B7C0;
+   --color_icon: #9197B3;
+   --color_active_primary: #008767;
+   --color_active_secondary: #16C098;
+   --color_inactive_primary: #DF0404;
+   --color_inactive_secondary: #FFC5C5;
+}
