@@ -1,0 +1,18 @@
+## Folder
+admin/
+build/
+dist/
+public/
+node_modules/
+
+## System files
+.DS_Store
+Thumbs.db
+.vscode
+.cache
+.svn
+.hg
+
+## Config files
+.eslintcache
+package-lock.json

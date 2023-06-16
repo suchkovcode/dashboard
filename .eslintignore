@@ -1,0 +1,21 @@
+## Folder
+admin/
+build/
+dist/
+public/
+video/
+img/
+fonts/
+node_modules/
+
+## System files
+.vscode
+.cache
+.git
+.svn
+.hg
+.js.map
+
+## Config files
+package.json
+package-lock.json
