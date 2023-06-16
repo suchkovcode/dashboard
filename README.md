@@ -6,10 +6,10 @@
 <table>
    <tr>
       <td>
-         <img src="./src/assets/img/md/mob.png?v1" alt="Картинка мобильного" title="Картинка">
+         <img src="./src/assets/img/md/mob-1.png" alt="Картинка мобильного" title="Картинка">
       </td>
       <td>
-         <img src="./src/assets/img/md/des.png?v1" alt="Картинка компьютера" title="Картинка">
+         <img src="./src/assets/img/md/des-1.png" alt="Картинка компьютера" title="Картинка">
       </td>
    </tr>
 </table>
